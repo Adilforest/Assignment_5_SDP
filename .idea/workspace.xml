@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2b22a23-ca46-4c52-aa61-4da3bd2906c3" name="Changes" comment="implementation of states">
-      <change beforePath="$PROJECT_DIR$/src/game/characters/strategies/MagicStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/characters/strategies/MagicStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/characters/strategies/MeleeStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/characters/strategies/MeleeStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/characters/strategies/RangedStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/characters/strategies/RangedStrategy.java" afterDir="false" />
+    <list default="true" id="b2b22a23-ca46-4c52-aa61-4da3bd2906c3" name="Changes" comment="implementation of strategies">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/actions/AttackAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/actions/AttackAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/actions/GameAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/actions/GameAction.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +68,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1730207830201</updated>
-      <workItem from="1730207831626" duration="6129000" />
+      <workItem from="1730207831626" duration="7306000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -110,7 +110,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730234896012</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="implementation of strategies">
+      <option name="closed" value="true" />
+      <created>1730235519280</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1730235519280</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,7 +129,8 @@
     <MESSAGE value="creation a game structure" />
     <MESSAGE value="implementation of interfaces Strategy &amp; FightingStrategy with main class Character" />
     <MESSAGE value="implementation of states" />
-    <option name="LAST_COMMIT_MESSAGE" value="implementation of states" />
+    <MESSAGE value="implementation of strategies" />
+    <option name="LAST_COMMIT_MESSAGE" value="implementation of strategies" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
