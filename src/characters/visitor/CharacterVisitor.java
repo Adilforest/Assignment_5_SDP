@@ -1,4 +1,4 @@
-package game.characters.visitor;
+package characters.visitor;
 
 public interface CharacterVisitor {
 }

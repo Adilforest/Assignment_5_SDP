@@ -4,10 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2b22a23-ca46-4c52-aa61-4da3bd2906c3" name="Changes" comment="implementation of strategies">
+    <list default="true" id="b2b22a23-ca46-4c52-aa61-4da3bd2906c3" name="Changes" comment="implementation of Actions">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/characters/strategies/AttackStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/game/SimpleGameLoop.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/actions/AttackAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/actions/AttackAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/actions/GameAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/actions/GameAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Game.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/actions/AttackAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/AttackAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/actions/DefendAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/DefendAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/actions/GameAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/GameAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/actions/HealAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/HealAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/characters/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/characters/Character.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/characters/states/DefeatedState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/characters/states/DefeatedState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/characters/states/NormalState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/characters/states/NormalState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/characters/states/PoweredUpState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/characters/states/PoweredUpState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/characters/states/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/characters/states/CharacterState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/characters/strategies/FightingStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/characters/strategies/MagicStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/characters/strategies/MagicStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/characters/strategies/MeleeStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/characters/strategies/MeleeStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/characters/strategies/RangedStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/characters/strategies/RangedStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/characters/visitor/BoostEffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/characters/visitor/BoostEffect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/characters/visitor/CharacterVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/characters/visitor/CharacterVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/characters/visitor/DamageEffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/characters/visitor/DamageEffect.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,8 +65,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.SimpleGameLoop.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -60,6 +80,31 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="game" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="SimpleGameLoop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="game.SimpleGameLoop" />
+      <module name="Assignment_5_SDP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="characters.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SimpleGameLoop" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -68,7 +113,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1730207830201</updated>
-      <workItem from="1730207831626" duration="7306000" />
+      <workItem from="1730207831626" duration="12493000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -118,7 +163,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730235519280</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="implementation of Actions">
+      <option name="closed" value="true" />
+      <created>1730238187697</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1730238187697</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,7 +183,8 @@
     <MESSAGE value="implementation of interfaces Strategy &amp; FightingStrategy with main class Character" />
     <MESSAGE value="implementation of states" />
     <MESSAGE value="implementation of strategies" />
-    <option name="LAST_COMMIT_MESSAGE" value="implementation of strategies" />
+    <MESSAGE value="implementation of Actions" />
+    <option name="LAST_COMMIT_MESSAGE" value="implementation of Actions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
